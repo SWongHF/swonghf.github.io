@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=big-5" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<link rel="icon" type="image/x-icon" href="./images/logo.png">
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Weather Widget</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Info</div>
+<div class="menu-item"><a href="index.html">About</a></div>
+<div class="menu-item"><a href="pdf/CV_WONG_HOK_FONG.pdf">CV</a></div>
+<div class="menu-category">Fun Stuffs</div>
+<div class="menu-item"><a href="puzzle.html">8-Puzzle</a></div>
+<div class="menu-item"><a href="weather.html" class="current">Weather</a></div>
+<div class="menu-category">Readings</div>
+<div class="menu-item"><a href="list.html">List</a></div>
+<div class="menu-category">Others</div>
+<div class="menu-item"><a href="interest.html">Interests</a></div>
+<div class="menu-item"><a href="project.html">Projects</a></div>
+</td>
+<td id="layout-content">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Belanosima:400,600">
+        <link rel="stylesheet" href="https://fontlibrary.org//face/cmu-sans-serif" type="text/css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>        
+    <script src="./js/weather.js"></script>
+    <link href="./css/weather.css" rel="stylesheet">
+    <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>    
+        
+        <div class="body p-3 mb-3">
+            <h2 class="title d-flex text-align-left font-weight-bold">Weather @ Hong Kong</h2>
+            <div class="line-break" style="background-color: rgb(73, 73, 73); margin-bottom: 20px;"></div>
+            <div class="weather-content p-1" style="display: none!important;">
+                <section style="background-color: #C1CFEA;">
+                    <div class="container py-5 h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100" style="color: #282828;">
+                            <div class="col-sm-12 col-md-10 col-lg-8 col-xl-8">
+                                <div class="card mb-4" style="border-radius: 25px;">
+                                    <div class="card-body p-3">
+                                        <div class="d-flex justify-content-between pb-2">
+                                            <div>
+                                                <h2 class="display-2">
+                                                    <strong class="currentTemperature">N/A</strong>
+                                                </h2>
+                                                <p class="text-muted mb-0 currentPositionnDatetime">N/A</p>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <img class="currentWeatherIcon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/not-available.svg" width="112px">
+                                                </div>
+                                                <div class="text-center">
+                                                    <div class="currentWeatherInfo badge badge-pill badge-secondary px-3">N/A</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between px-1 py-1 mx-0 shadow-sm rounded-pill" style="background:#f8f8f8">
+                                            <div class="d-flex justify-content-between weather-today-info">
+                                                <img class="currentDeltaTemperatureIcon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/thermometer-glass-celsius.svg" style="height: 1.75rem;">
+                                                <div class="currentDeltaTemperature text-info font-weight-bold">N/A</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between weather-today-info">
+                                                <img class="currentWindSpeedIcon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/windsock.svg" style="height: 1.75rem;">
+                                                <div class="currentWindSpeed text-info font-weight-bold">N/A</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between weather-today-info">
+                                                <img class="currentHumidityIcon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/humidity.svg" style="height: 1.75rem;">
+                                                <div class="currentHumidity text-info font-weight-bold">N/A</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between weather-today-info">
+                                                <img class="currentRainfallIcon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/raindrop-measure.svg" style="height: 1.75rem;">
+                                                <div class="currentRainfall text-info font-weight-bold">N/A</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between weather-today-info">
+                                                <img class="currentUVLevelIcon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/uv-index.svg" style="height: 1.75rem;">
+                                                <div class="currentUVLevel text-info font-weight-bold">N/A</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-4" style="border-radius: 25px;">
+                                    <div class="card-body p-4">
+                                            <div class="d-flex justify-content-around text-center pb-2">
+                                                <div class="flex-column">
+                                                    <p class="small temperatureTime1"><strong>N/A</strong></p>
+                                                    <img class="Time1Icon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/not-available.svg" style="height: 5.75rem;">
+                                                    <p class="mb-0 Time1"><strong>N/A</strong></p>
+                                                </div>
+                                                <div class="flex-column">
+                                                    <p class="small temperatureTime2"><strong>N/A</strong></p>
+                                                    <img class="Time2Icon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/not-available.svg" style="height: 5.75rem;">
+                                                    <p class="mb-0 Time2"><strong>N/A</strong></p>
+                                                </div>
+                                                <div class="flex-column">
+                                                    <p class="small temperatureTime3"><strong>N/A</strong></p>
+                                                    <img class="Time3Icon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/not-available.svg" style="height: 5.75rem;">
+                                                    <p class="mb-0 Time3"><strong>N/A</strong></p>
+                                                </div>
+                                                <div class="flex-column">
+                                                    <p class="small temperatureTime4"><strong>N/A</strong></p>
+                                                    <img class="Time4Icon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/not-available.svg" style="height: 5.75rem;">
+                                                    <p class="mb-0 Time4"><strong>N/A</strong></p>
+                                                </div>
+                                                <div class="flex-column">
+                                                    <p class="small temperatureTime5"><strong>N/A</strong></p>
+                                                    <img class="Time5Icon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/not-available.svg" style="height: 5.75rem;">
+                                                    <p class="mb-0 Time5"><strong>N/A</strong></p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 bg-light" style="border-radius: 5px;">
+                                    <div class="card-header"><strong>Weather Information</strong></div>
+                                    <div class="card-body currentWeatherSituation p-4">
+                                        ---
+                                    </div>
+                                </div>
+                                <div class="card mb-4" style="border-radius: 25px;">
+                                    <div class="card-body p-4">
+                                            <div class="d-flex justify-content-around text-center pb-2">
+                                                <div class="flex-column">
+                                                    <p class="small temperatureDay1"><strong>N/A</strong></p>
+                                                    <img class="Day1Icon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/not-available.svg" style="height: 5.75rem;">
+                                                    <p class="mb-0 Day1"><strong>N/A</strong></p>
+                                                </div>
+                                                <div class="flex-column">
+                                                    <p class="small temperatureDay2"><strong>N/A</strong></p>
+                                                    <img class="Day2Icon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/not-available.svg" style="height: 5.75rem;">
+                                                    <p class="mb-0 Day2"><strong>N/A</strong></p>
+                                                </div>
+                                                <div class="flex-column">
+                                                    <p class="small temperatureDay3"><strong>N/A</strong></p>
+                                                    <img class="Day3Icon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/not-available.svg" style="height: 5.75rem;">
+                                                    <p class="mb-0 Day3"><strong>N/A</strong></p>
+                                                </div>
+                                                <div class="flex-column">
+                                                    <p class="small temperatureDay4"><strong>N/A</strong></p>
+                                                    <img class="Day4Icon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/not-available.svg" style="height: 5.75rem;">
+                                                    <p class="mb-0 Day4"><strong>N/A</strong></p>
+                                                </div>
+                                                <div class="flex-column">
+                                                    <p class="small temperatureDay5"><strong>N/A</strong></p>
+                                                    <img class="Day5Icon" src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/not-available.svg" style="height: 5.75rem;">
+                                                    <p class="mb-0 Day5"><strong>N/A</strong></p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="loading-view">
+            <div class="loader"></div>
+        </div>
+<div id="footer">
+<div id="footer-text">
+Page generated 2026-02-19 03:22:36 HKT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,7 @@
+*.jemdoc
+*.py
+jemdoc
+jemdoc.conf
+css/
+www/
+README

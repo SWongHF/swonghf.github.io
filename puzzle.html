@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=big-5" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<link rel="icon" type="image/x-icon" href="./images/logo.png">
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>8-Puzzle</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Info</div>
+<div class="menu-item"><a href="index.html">About</a></div>
+<div class="menu-item"><a href="pdf/CV_WONG_HOK_FONG.pdf">CV</a></div>
+<div class="menu-category">Fun Stuffs</div>
+<div class="menu-item"><a href="puzzle.html" class="current">8-Puzzle</a></div>
+<div class="menu-item"><a href="weather.html">Weather</a></div>
+<div class="menu-category">Readings</div>
+<div class="menu-item"><a href="list.html">List</a></div>
+<div class="menu-category">Others</div>
+<div class="menu-item"><a href="interest.html">Interests</a></div>
+<div class="menu-item"><a href="project.html">Projects</a></div>
+</td>
+<td id="layout-content">
+        <link href="./css/puzzle.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>        
+    <script src="./js/gameview.js"></script>
+<div class="body p-3 mb-3">
+            <h2 class="title d-flex text-align-left font-weight-bold">The 8-puzzle Game</h2>
+	<div class="line-break" style="background-color: rgb(73, 73, 73); margin-bottom: 20px;"></div>
+    <div id="gameview" class="prevent-select">
+        <div id="direction">Press "Start New Game".</div>
+        <div class="button-group">
+            <button id="new-game" class="btn btn-primary">Start New Game</button>
+            <button id="solve" class="btn btn-success">Solve</button>
+        </div>
+        <div class="puzzle pz-shadow">
+            <div id="puzzle_1" class="puzzle_num" style="background-color: #fa8080;">1</div>
+            <div id="puzzle_2" class="puzzle_num" style="background-color: #FFAB76;">2</div>
+            <div id="puzzle_3" class="puzzle_num" style="background-color: #FFFDA2;">3</div>
+            <div id="puzzle_nl"class="puzzle_num -hidden">\n</div>
+            <div id="puzzle_4"class="puzzle_num" style="background-color: #BAFFB4;">4</div>
+            <div id="puzzle_5"class="puzzle_num" style="background-color: #CFFFDC;">5</div>
+            <div id="puzzle_6"class="puzzle_num" style="background-color: #93FFD8;">6</div>
+            <div id="puzzle_nl"class="puzzle_num -hidden">\n</div>
+            <div id="puzzle_7"class="puzzle_num" style="background-color: #93b4f7;">7</div>
+            <div id="puzzle_8"class="puzzle_num" style="background-color: #F4BEEE;">8</div>
+            <div id="puzzle_mt"class="puzzle_num -empty"></div>
+        </div>
+        <div id="logmsg" class="prevent-select">
+            <div id="logmsg-bar">Logs</div>
+            <div id="logmsg-msg" class="scroller"></div>
+        </div>
+            </div>
+        </div>
+<div id="footer">
+<div id="footer-text">
+Page generated 2026-02-16 22:52:08 HKT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

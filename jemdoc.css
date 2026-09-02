@@ -1,0 +1,521 @@
+/* Default css file for jemdoc. */
+table#imgtable, table#imgtable td {
+    border: none;
+    text-align: left;
+
+}
+
+table#tlayout {
+    border: none;
+    border-collapse: separate;
+    background: white;
+}
+
+#pjtable tr.r1 { font-weight: bold; }
+#pjtable {max-width: 800px;}
+body {
+	background: white;
+	font-family: Georgia, serif !important;
+	padding-bottom: 8px;
+	margin: 0;
+}
+
+#layout-menu {
+	background: #f6f6f6;
+	border: 1px solid #dddddd;
+	padding-top: 0.5em;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 1.0em;
+	width: auto;
+	white-space: nowrap;
+    text-align: left;
+    vertical-align: top;
+}
+
+#layout-menu td {
+	background: #f4f4f4;
+    vertical-align: top;
+}
+
+#layout-content {
+	padding-top: 0.0em;
+	padding-left: 1.0em;
+	padding-right: 1.0em;
+    border: none;
+    background: white;
+    text-align: left;
+    vertical-align: top;
+        max-width: 850px;
+}
+
+#layout-menu a {
+	line-height: 1.5em;
+	margin-left: 0.5em;
+}
+
+tt {
+    background: #ffffdd;
+}
+
+pre, tt {
+	font-size: 90%;
+	font-family: monaco, monospace;
+}
+
+a, a > tt {
+	color: #224b8d;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px gray dotted;
+}
+
+#layout-menu a.current:link, #layout-menu a.current:visited {
+	color: #022b6d;
+	border-bottom: 1px gray solid;
+}
+#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
+	color: #527bbd;
+	text-decoration: none;
+}
+#layout-menu a:hover {
+	text-decoration: none;
+}
+
+div.menu-category {
+	border-bottom: 1px solid gray;
+	margin-top: 0.8em;
+	padding-top: 0.2em;
+	padding-bottom: 0.1em;
+	font-weight: bold;
+}
+
+div.menu-item {
+	padding-left: 16px;
+	text-indent: -16px;
+}
+
+div#toptitle {
+	padding-bottom: 0.2em;
+	margin-bottom: 1.5em;
+	border-bottom: 3px double gray;
+}
+
+/* Reduce space if we begin the page with a title. */
+div#toptitle + h2, div#toptitle + h3 {
+	margin-top: -0.7em;
+}
+
+div#subtitle {
+	margin-top: 0.0em;
+	margin-bottom: 0.0em;
+	padding-top: 0em;
+	padding-bottom: 0.1em;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+
+h1, h2, h3 {
+	color: #527bbd;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+	padding-top: 0.5em;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+h1 {
+	font-size: 165%;
+}
+
+h2 {
+	padding-top: 0.8em;
+	font-size: 125%;
+}
+
+h2 + h3 {
+    padding-top: 0.2em;
+}
+
+h3 {
+	font-size: 110%;
+	border-bottom: none;
+}
+
+p {
+	margin-top: 0.0em;
+	margin-bottom: 0.8em;
+	padding: 0;
+	line-height: 1.3;
+}
+
+pre {
+	padding: 0;
+	margin: 0;
+}
+
+div#footer {
+	font-size: small;
+	border-top: 1px solid #c0c0c0;
+	padding-top: 0.1em;
+	margin-top: 4.0em;
+	color: #c0c0c0;
+}
+
+div#footer a {
+	color: #80a0b0;
+}
+
+div#footer-text {
+	float: left;
+	padding-bottom: 8px;
+}
+
+ul, ol, dl {
+	margin-top: 0.2em;
+	padding-top: 0;
+	margin-bottom: 0.8em;
+}
+
+dt {
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+
+dl {
+	margin-left: 20px;
+}
+
+dd {
+	color: #222222;
+}
+
+dd > *:first-child {
+	margin-top: 0;
+}
+
+ul {
+	list-style-position: outside;
+	list-style-type: square;
+}
+
+p + ul, p + ol {
+	margin-top: -0.5em;
+}
+
+li ul, li ol {
+	margin-top: -0.3em;
+}
+
+ol {
+	list-style-position: outside;
+	list-style-type: decimal;
+}
+
+li p, dd p {
+	margin-bottom: 0.3em;
+}
+
+
+ol ol {
+	list-style-type: lower-alpha;
+}
+
+ol ol ol {
+	list-style-type: lower-roman;
+}
+
+p + div.codeblock {
+	margin-top: -0.6em;
+}
+
+div.codeblock, div.infoblock {
+	margin-right: 0%;
+	margin-top: 1.2em;
+	margin-bottom: 1.3em;
+}
+
+div.blocktitle {
+	font-weight: bold;
+	color: #cd7b62;
+	margin-top: 1.2em;
+	margin-bottom: 0.1em;
+}
+
+div.blockcontent {
+	border: 1px solid silver;
+	padding: 0.3em 0.5em;
+}
+
+div.infoblock > div.blockcontent {
+	background: #ffffee;
+}
+
+div.blockcontent p + ul, div.blockcontent p + ol {
+	margin-top: 0.4em;
+}
+
+div.infoblock p {
+	margin-bottom: 0em;
+}
+
+div.infoblock li p, div.infoblock dd p {
+	margin-bottom: 0.5em;
+}
+
+div.infoblock p + p {
+	margin-top: 0.8em;
+}
+
+div.codeblock > div.blockcontent {
+	background: #f6f6f6;
+}
+
+span.pycommand {
+	color: #000070;
+}
+
+span.statement {
+	color: #008800;
+}
+span.builtin {
+	color: #000088;
+}
+span.special {
+	color: #990000;
+}
+span.operator {
+	color: #880000;
+}
+span.error {
+	color: #aa0000;
+}
+span.comment, span.comment > *, span.string, span.string > * {
+	color: #606060;
+}
+
+@media print {
+	#layout-menu { display: none; }
+}
+
+#fwtitle {
+	margin: 2px;
+}
+
+#fwtitle #toptitle {
+	padding-left: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
+	margin-top: -0.7em;
+}
+
+div#toptitle h1, #layout-content div#toptitle h1 {
+	margin-bottom: 0.0em;
+	padding-bottom: 0.1em;
+	padding-top: 0;
+	margin-top: 0.5em;
+	border-bottom: none;
+}
+
+img.eq {
+	padding: 0;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+	margin: 0;
+}
+
+img.eqwl {
+	padding-left: 2em;
+	padding-top: 0.6em;
+	padding-bottom: 0.2em;
+	margin: 0;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 2px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+table + table {
+    margin-top: 1em;
+}
+
+tr.heading {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+img {
+    border: none;
+}
+
+table.imgtable, table.imgtable td {
+    border: none;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    table.imgtable,
+    table.imgtable td,
+    table#imgtable,
+    table#imgtable td {
+        font-size: 1rem;        /* same as body text */
+        line-height: 1.4;       /* improve readability */
+    }
+
+    /* If you want the table text slightly smaller (optional) */
+    /* font-size: 0.9rem; */
+}
+
+.course-container {
+  max-width: 900px;
+  margin: 1em auto;
+}
+
+/* Force all details blocks */
+details {
+  background: #f5f7fa !important;
+  border: 1px solid #dce1e8 !important;
+  border-radius: 6px !important;
+  margin-bottom: 10px !important;
+  display: block !important;
+}
+
+/* FORCE the summary bar to be a flex container with perfect centering */
+summary {
+  padding: 12px 18px !important;
+  cursor: pointer !important;
+  list-style: none !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  min-height: 48px !important;
+  box-sizing: border-box !important;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Hide the default browser triangle completely */
+summary::-webkit-details-marker {
+  display: none !important;
+}
+summary::marker {
+  display: none !important;
+  content: "" !important;
+}
+
+/* FORCE the h3 inside summary to have ZERO margins and perfect line-height */
+summary h3 {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  color: #1a1a2e !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+/* FORCE the custom arrow to align perfectly */
+summary::after {
+  content: "\25B8" !important;
+  margin-left: auto !important;
+  font-size: 1.2rem !important;
+  line-height: 1.3 !important;
+  color: #6b7a8f !important;
+  transition: transform 0.2s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+details[open] summary::after {
+  transform: rotate(90deg) !important;
+}
+
+/* ---- Nested Lists (No changes here, but keeping them) ---- */
+details ul {
+  margin: 0 !important;
+  padding: 0 18px 18px 18px !important;
+  list-style: none !important;
+}
+
+details ul > li {
+  font-weight: 700 !important;
+  color: #1a1a2e !important;
+  padding: 10px 0 4px 0 !important;
+  border-bottom: 2px solid #dce1e8 !important;
+  margin-top: 6px !important;
+  list-style: none !important;
+}
+
+details ul > li:first-child {
+  margin-top: 0 !important;
+}
+
+details ul > li > ul {
+  list-style: none !important;
+  padding: 6px 0 0 20px !important;
+  margin: 0 !important;
+}
+
+details ul > li > ul > li {
+  font-weight: 400 !important;
+  padding: 4px 0 !important;
+  border-bottom: 1px dashed #e6eaef !important;
+  color: #2d3344 !important;
+  font-size: 0.95rem !important;
+  list-style: none !important;
+}
+
+details ul > li > ul > li:last-child {
+  border-bottom: none !important;
+}
+
+details ul > li > ul > li strong {
+  color: #1a5fb4 !important;
+  font-weight: 600 !important;
+  margin-right: 6px !important;
+}
+
+@media (max-width: 600px) {
+  summary {
+    padding: 10px 14px !important;
+    min-height: 44px !important;
+  }
+  summary h3 {
+    font-size: 0.95rem !important;
+  }
+  details ul {
+    padding: 0 14px 14px 14px !important;
+  }
+  details ul > li > ul {
+    padding-left: 14px !important;
+  }
+  details ul > li > ul > li {
+    font-size: 0.88rem !important;
+  }
+}
