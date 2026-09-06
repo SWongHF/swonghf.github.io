@@ -1,0 +1,90 @@
+#gameview {
+  font-family: Consolas;
+}
+#direction {
+  padding-bottom: 5px;
+  font-size: large;
+}
+.button-group {
+  font-family: "CMU Sans Serif", sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.puzzle {
+  width: 20rem;
+  height: 20rem;
+  display: grid;
+  place-content: center;
+  background-color: #222222;
+  color: #d0d0d0;
+  margin-bottom: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 3px;
+  border: 5px solid currentColor;
+  cursor: pointer;
+}
+.pz-shadow {
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3) !important;
+}
+.puzzle_num:hover {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.puzzle {
+  -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
+}
+.puzzle_num {
+  display: grid;
+  font-size: x-large;
+  place-content: center;
+  color: black;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+.puzzle_num.-empty {
+  border: 0;
+}
+.puzzle_num.-hidden {
+  display: none;
+}
+#logmsg > #logmsg-bar {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: large;
+  background-color: rgb(166, 164, 255);
+  min-width: 380px;
+  max-width: 450px;
+  color: white;
+}
+#logmsg > #logmsg-msg {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Consolas;
+  background-color: black;
+  height: 14rem;
+  min-width: 380px;
+  max-width: 450px;
+  color: rgb(0, 238, 255);
+}
+.prevent-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.scroller {
+  overflow-y: scroll;
+}
+.scroller::-webkit-scrollbar {
+  width: 20px;
+}
+.scroller::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+.scroller::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}

@@ -2,7 +2,7 @@
 *.py
 jemdoc
 jemdoc.conf
-css/
+css/unwanted/
 readings/
 www/
 README
