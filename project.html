@@ -36,30 +36,28 @@
             <div class="line-break" style="background-color: rgb(73, 73, 73); margin-bottom: 20px;"></div>
                     </div>
 <h3>Research Vision</h3>
-<p>My current research seeks to build a theoretical and practical foundation for 
-demystifying the empirical success of modern machine learning by rigorously 
-analyzing optimization dynamics. I am driven by the motivation that a deeper 
-mathematical understanding of optimization and learning algorithms is the key
-to unlocking the next-generation of deep learning. </p>
-<p>My work is anchored at the investigation of how models learn &ndash; particularly 
-through gradient-based methods &ndash; and how we can engineer these mechanisms 
-to be faster, more robust, and deployable in resource-constrained environments. 
-This vision is built on three interconnected pillars:</p>
-<p>1. <b>Theoretical Underpinnings of Optimization</b>: I aim to step toward a more general 
-theory of why the modern and non-conventional optimization often succeed in practice.
-This is exemplified by my work on large stepsize gradient descent for multinomial logistic 
-regression. I plan to extend this inquiry to deeper architectures and more complex loss landscapes, 
-seeking principles that can guide hyperparameter selection and algorithm design from first principles.</p>
-<p>2. <b>Efficiency and Deployment through Quantization</b>: Moving from theory to practice, 
-I focus on making powerful models lean and executable. My research on quantization 
-optimizers (such as <tt>ASkewSGD</tt>) tackles the critical challenge of compressing neural 
-networks without sacrificing performance. The goal is to develop algorithms that co-design 
-the training and quantization processes, ensuring models are equipped with hardware-friendly 
-representations.</p>
-<p>3. <b>Foundations of Generalization and Online Learning</b>: I am fascinated by what enables models 
-to generalize from data and adapt to streaming information. My early exploration of test set bounds in 
-binary classification and the sublinear regret bound in online logistic regression represent 
-a quest to formalize learning guarantees.</p>
+<p>My research seeks to build theoretical and practical foundations in two complementary directions: theoretical machine learning, 
+centered on optimization paradigms and training dynamics, and theoretical computer science, centered on provably efficient algorithms for 
+large-scale data. I am driven by the motivation that a deeper mathematical understanding of optimization, learning algorithms, 
+and data-processing algorithms is the key to unlocking the next generation of deep learning and scalable data systems.</p>
+<p>Within machine learning, my work is anchored at the investigation of how models learn &ndash; particularly through gradient-based methods &ndash; 
+and how we can engineer these mechanisms to be faster, more robust, and deployable in resource-constrained environments. 
+In parallel, I study the algorithmic foundations of processing massive, dynamic, and streaming data under tight time and space constraints. 
+This vision is built on four interconnected pillars:</p>
+<p>1. <b>Optimizers and Training Dynamics</b>: I aim to step toward a more general theory of why modern and non-conventional optimizers often succeed 
+in practice. This is exemplified by my work on large stepsize gradient descent for multinomial logistic regression, as well as high-probability 
+convergence bounds for SGD with linear warm-up and FedAvg with heterogeneous local updates. I plan to extend this inquiry to deeper architectures 
+and more complex loss landscapes, seeking principles that explain phase transitions, stability, implicit bias, and hyperparameter selection from first principles.</p>
+<p>2. <b>Theoretical Computer Science and Fast Algorithms for Large-Scale Data</b>: I am interested in the algorithmic foundations of processing massive, 
+dynamic, and streaming data under tight time and space constraints. My work on frequency estimation in strict-turnstile streams with $L_1$ $\alpha$-bounded 
+deletions extends classical streaming algorithms and proposes hybrid sketching structures that preserve accuracy for heavy items while remaining space-efficient. 
+I plan to pursue fast graph algorithms, streaming and sketching algorithms, and space-efficient data structures, with an emphasis on provable guarantees, lower bounds, 
+and algorithms that scale to large-scale machine learning and data-system workloads.</p>
+<p>3. <b>Efficiency and Deployment through Quantization</b>: Moving from theory to practice within machine learning, I focus on making powerful models lean and executable. 
+My research on quantization optimizers (such as ASkewSGD) tackles the critical challenge of compressing neural networks without sacrificing performance. The goal 
+is to develop algorithms that co-design the training and quantization processes, ensuring models are equipped with hardware-friendly representations.</p>
+<p>4. <b>Foundations of Generalization and Online Learning</b>: I am fascinated by what enables models to generalize from data and adapt to streaming information. 
+My early exploration of test set bounds in binary classification and the sublinear regret bound in online logistic regression represent a quest to formalize learning guarantees.</p>
 <h3>Publication</h3>
 <table class="imgtable"><tr><td>
 <img src="./images/fedavg_loss_4_50.png" alt="fedavg" width="300px" />&nbsp;</td>
@@ -195,7 +193,7 @@ Contour Approximation by Fourier Transform <a href="https://github.com/SWongHF/C
 </td></tr></table>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-10-02 05:28:00, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2026-11-13 15:24:39, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>
